@@ -13,7 +13,8 @@
     "test:e2e": "LOG_LEVEL=warn NODE_ENV=test jest __tests__/e2e/* && standard",
     "test-watch": "NODE_ENV=test jest --watch",
     "test-coverage": "NODE_ENV=test standard && jest --collectCoverage && codecov",
-    "lint": "standard --fix"
+    "lint": "standard --fix",
+    "stacker-postinstall": "bash stacker-deploy.sh"
   },
   "dependencies": {
     "colors": "^1.3.2",
@@ -36,8 +37,8 @@
     "standard": "^11.0.0"
   },
   "engines": {
-    "node": ">= 7.7.0",
-    "npm": ">= 4.0.0"
+    "node": ">= 13.7.0",
+    "npm": ">= 4.4"
   },
   "standard": {
     "env": [
