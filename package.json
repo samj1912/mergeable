@@ -42,7 +42,7 @@
     "standard": "^11.0.0"
   },
   "engines": {
-    "node": "14.15.4"
+    "node": "^14.15"
   },
   "standard": {
     "env": [
